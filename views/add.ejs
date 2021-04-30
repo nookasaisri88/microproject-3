@@ -1,0 +1,58 @@
+<html lang="en">
+    <head>
+        <title>Generic</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <h1 class="c1">Add a new Product</h1><br>
+        <div class="container">
+        <form class="c3" action="/AddData" method="POST">
+            <div class="form-group row">
+                <label for="med_id" class="col-sm-2 col-form-label">Medicine Id:</label>
+                <div class="col-sm-3">
+                    <input type="text" placeholder="Enter Medicine id" class="form-control" id="med_id" name="mid">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="t_name" class="col-sm-2 col-form-label">Tablet Name:</label>
+                <div class="col-sm-3">
+                    <input type="text" placeholder="Enter tablet name" class="form-control" id="t_name" name="tname">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="t_price" class="col-sm-2 col-form-label">Tablet price:</label>
+                <div class="col-sm-3">
+                     <input type="number" placeholder="Enter Medicine price" class="form-control" id="t_price" name="tprice">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="t_t_s" class="col-sm-2 col-form-label">Tablets_per_strip:</label>
+                <div class="col-sm-3">
+                    <input type="number" placeholder="Enter tablets per price" class="form-control" id="t_t_s" name="tab_per_strip">
+                 </div>
+            </div>
+            <div class="form-group row">
+                <label for="t_stock" class="col-sm-2 col-form-label">Stock:</label>
+                <div class="col-sm-3">
+                     <input type="number" placeholder="Enter stock" class="form-control" id="t_stock" name="stock">
+                 </div>
+            </div>
+            <div class="form-group row">
+                <label for="t_comp" class="col-sm-2 col-form-label">Company:</label>
+                <div class="col-sm-3">
+                    <input type="text" placeholder="Enter Company" class="form-control" id="t_comp" name="company">
+                 </div>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-dark">Submit</button>
+        </form>
+        <a href="/" class="btn btn-dark" >Home Page</a>
+        </div>
+    </body>
+</html>

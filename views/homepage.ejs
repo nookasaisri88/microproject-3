@@ -1,0 +1,56 @@
+<html lang="en">
+    <head>
+        <title>Generic</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <!--<div class="container" rows="3">-->
+        <h1 class="c1">Generic Inventory</h1>
+  <!--  <h1 class="c1">Welcome</h1>-->
+   <pre>     A generic drug is a medication created to be the same as an existing approved brand-name drug in dosage form,
+    safety, strength, route of administration, quality, and performance characteristics.
+
+    Generic medicines work the same as brand-name medicines
+            
+    A generic medicine works in the same way and provides the same clinical benefit as its brand-name version. 
+    This standard applies to all FDA-approved generic medicines. A generic medicine is the same as a brand-name 
+    medicine in dosage, safety, effectiveness, strength, stability, and quality, as well as in the way it is taken 
+    and should be used.
+        </pre>
+    
+            <table>
+                <tr>
+                    <th>MId</th>
+                    <th>Tablet name</th>
+                    <th>Tablet price</th>
+                    <th>Tablets per strip</th>
+                    <th>Stock</th>
+                    <th>Company</th>
+                </tr>
+                <% for(var i=0;i<data.length;i++){%>
+                    <tr>
+                        <td><%= data[i].mid %></td>
+                        <td><%= data[i].tname %></td>
+                        <td><%= data[i].tprice %></td>
+                        <td><%= data[i].tab_per_strip %></td>
+                        <td><%= data[i].stock %></td>
+                        <td><%= data[i].company %></td>
+                    </tr>
+                <%}
+                %>
+            </table>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="/create" class="btn btn-primary">Add New Product</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="/updatestock" class="btn btn-success">Update stock</a>&nbsp&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="/deleteproduct" class="btn btn-danger">Delete Product</a>
+            <br><br>
+        
+    </body>
+</html>

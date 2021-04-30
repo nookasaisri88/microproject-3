@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Generic</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <h1 class="c1" >Update details of the medicine</h1><br><br>
+        <div class="container">
+        <form class="c3" method="POST" action="/update">
+            <div class="form-group row">
+                <label for="med_id" class="col-sm-2 col-form-label">Medicine Id:</label>
+                <div class="col-sm-3">
+                    <input type="text" placeholder="Enter Medicine id" class="form-control" id="med_id" name="mid">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="t_stock" class="col-sm-2 col-form-label">Stock:</label>
+                <div class="col-sm-3">
+                     <input type="number" placeholder="Enter stock" class="form-control" id="t_stock" name="stock">
+                 </div>
+            </div>
+            <br>
+            <button class="btn btn-dark" id="update">Update</button>
+        </form>
+        <a href="/" class="btn btn-dark">Home Page</a>
+        </div>
+    </body>
+</html>

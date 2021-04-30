@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Generic</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <h1 class="c1">Delete Medicine</h1>
+        <br>
+        <div class="container">
+        <form class="c3" action="/delete" method="POST">
+            <div class="form-group row">
+                <label for="med_id" class="col-sm-2 col-form-label">Medicine Id:</label>
+                <div class="col-sm-3">
+                    <input type="text" placeholder="Enter Medicine id" class="form-control" id="med_id" name="id">
+                </div>
+            </div>
+            <button class="btn btn-dark"id="delete">Delete</button>
+        </form>
+        <a href="/" class="c2" >Home Page</a>
+        </div>
+    </body>
+</html>
